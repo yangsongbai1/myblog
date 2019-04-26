@@ -129,4 +129,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # 重写User模型
-# AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = 'users.User'

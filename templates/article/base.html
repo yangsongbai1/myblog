@@ -9,6 +9,9 @@
     <link href="{% static 'css/base.css' %}" rel="stylesheet">
     <link href="{% static 'css/index.css' %}" rel="stylesheet">
     <link href="{% static 'css/m.css' %}" rel="stylesheet">
+    {% block style %}
+        <!--css、js文件-->
+    {% endblock %}
 
     <!--[if lt IE 9]>
     <script src="{% static 'js/modernizr.js' %}"></script>
@@ -65,21 +68,21 @@
     {% endblock %}
 
     {% block sidebar %}
-        <div class="sidebar">
-            {% include 'include/about.html' %}
-
-            {% include 'include/search.html' %}
-
-            {% include 'include/cloud.html' %}
-
-            {% include 'include/paihang.html' %}
-
-            {% include 'include/tuijian.html' %}
-
-            {% include 'include/links.html' %}
-
-            {% include 'include/weixin.html' %}
-        </div>
+{#        <div class="sidebar">#}
+{#            {% include 'include/about.html' %}#}
+{##}
+{#            {% include 'include/search.html' %}#}
+{##}
+{#            {% include 'include/cloud.html' %}#}
+{##}
+{#            {% include 'include/paihang.html' %}#}
+{##}
+{#            {% include 'include/tuijian.html' %}#}
+{##}
+{#            {% include 'include/links.html' %}#}
+{##}
+{#            {% include 'include/weixin.html' %}#}
+{#        </div>#}
     {% endblock %}
 
 </article>
